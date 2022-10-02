@@ -86,7 +86,7 @@
             $check = $row['user_email'];
         }
             if($check!=""){
-                echo "<script>alert('This Email has already Sign Up, Please enter other Email')</script>";
+                echo "<script>alert('This Email has already Sign Up, Please enter others Email')</script>";
                 echo "<script>document.getElementById('id02').style.display='block';</script>";
             }
 
