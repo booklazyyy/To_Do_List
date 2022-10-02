@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do App</title>
-    <link rel="stylesheet" href="my-css/styles.css?v=759">
-    <link rel="stylesheet" href="my-css/login.css?v=100">
+    <link rel="stylesheet" href="my-css/styles.css?v=99">
+    <link rel="stylesheet" href="my-css/login.css?v=99">
     <script src="my-js/app.js" defer></script>
 </head>
 
@@ -98,7 +98,7 @@
 
 
                 if($result) {
-                    echo "<script language='javascript'>alert ('The Sign Up was Success.') </script>";
+                    echo "<script language='javascript'>alert ('The Sign up was success.') </script>";
                     echo "<script>document.getElementById('id01').style.display='block';</script>";
                 }
             }
@@ -173,7 +173,7 @@
             <div class="to-do">
                 <?php if(@$_SESSION['id']!=""){
                         $user_id = $_SESSION['id'];
-                        $sql = "SELECT * FROM todo_list WHERE user_id ='$user_id'";
+                        $sql = "SELECT * FROM todo_list WHERE user_id ='$user_id' ORDER BY user_id DESC";
                         $result = mysqli_query($conn, $sql);
                         foreach ($result as $row) {
                 ?>
