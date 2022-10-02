@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2022 at 12:49 AM
+-- Generation Time: Oct 03, 2022 at 01:23 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -39,7 +39,12 @@ CREATE TABLE `todo_list` (
 --
 
 INSERT INTO `todo_list` (`todo_id`, `todo_details`, `user_id`, `todo_date`) VALUES
-(143, 'sadsad', 4, '2022-10-03 02:52:25');
+(158, 'Wake up', 42, '2022-10-03 06:13:24'),
+(159, 'Have breakfast', 42, '2022-10-03 06:13:44'),
+(160, 'Play football', 42, '2022-10-03 06:15:42'),
+(161, 'Sleep', 42, '2022-10-03 06:21:31'),
+(162, 'Watch movies', 42, '2022-10-03 06:21:51'),
+(163, 'นอน', 42, '2022-10-03 06:22:37');
 
 -- --------------------------------------------------------
 
@@ -58,10 +63,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `user_email`, `user_password`) VALUES
-(1, 'methapon.tia@rmutto.ac.th', 'bookza1678'),
-(4, 'bookza2560@gmail.com', '1234'),
-(39, 'bookza25666@gmail.com', '1234'),
-(40, 'nongpair@gmail.com', '11225566');
+(1, 'methapon.tia@rmutto.ac.th', '1234'),
+(41, 'Tianmanee@gmail.com', '123456'),
+(42, 'school@gmail.com', '012');
 
 --
 -- Indexes for dumped tables
@@ -87,13 +91,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `todo_list`
 --
 ALTER TABLE `todo_list`
-  MODIFY `todo_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=158;
+  MODIFY `todo_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=164;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
