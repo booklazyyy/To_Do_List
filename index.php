@@ -98,7 +98,7 @@
 
 
                 if($result) {
-                    echo "<script language='javascript'>alert ('The Sign Up was Successful.') </script>";
+                    echo "<script language='javascript'>alert ('The Sign Up was Success.') </script>";
                     echo "<script>document.getElementById('id01').style.display='block';</script>";
                 }
             }
